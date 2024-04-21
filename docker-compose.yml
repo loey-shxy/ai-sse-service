@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  app:
+    # 容器名称
+    container_name: fcf  
+    # 编译
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      # 端口映射  本地 3000  容器端口 3000（在Dockerfile 中 EXPOSE 暴露的端口）
+      - "3000:3000"
+    volumes:
+      # 挂载本地 ./app 目录到 容器内 /app目录，方便升级
+      - ./app:/app
+      # 挂载容器内node安装包到外部
+      - /app/node_modules
+    environment:
+      NODE_ENV: production
+    restart: always   

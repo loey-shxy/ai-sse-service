@@ -1,0 +1,1 @@
+import{_ as s}from"./_plugin-vue_export-helper-x3n3nnut.js";import{o as c,x as t,e}from"./index--bHfDvFW.js";const o={},r={class:"terms-service"},_=e("div",{class:"terms-service__header"},[e("h1",null,"Privacy Policy")],-1),i=e("div",{class:"terms-service__content"},null,-1),n=[_,i];function a(l,d){return c(),t("div",r,n)}const f=s(o,[["render",a]]);export{f as default};
